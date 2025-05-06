@@ -1,0 +1,102 @@
+/* General resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 40px 20px;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Section Styles */
+section {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 30px 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+section:hover {
+  transform: scale(1.02);
+}
+
+section .title {
+  position: absolute;
+  top: -15px;
+  right: 20px;
+  background-color: #8e44ad;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section p {
+  font-size: 1.1em;
+  color: #555;
+  margin-top: 20px;
+}
+
+/* Layout for Desktop View (992px and above) */
+@media (min-width: 992px) {
+  section {
+    float: left;
+    width: 31.33%;
+    margin-right: 3.5%;
+  }
+
+  section:nth-child(3) {
+    margin-right: 0;
+  }
+}
+
+/* Layout for Tablet View (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  section {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+  }
+
+  section:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  section:nth-child(3) {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+/* Layout for Mobile View (767px and below) */
+@media (max-width: 767px) {
+  section {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  section .title {
+    position: static;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+}
