@@ -1,0 +1,197 @@
+/* General Body Styling */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fefefe;
+  color: #333;
+  margin-top: 80px; /* Offset for fixed navbar */
+  line-height: 1.6;
+}
+
+/* Navbar Styling - Fixed Removed */
+#main-navbar {
+  background-color: #1d3557; /* Deep blue background */
+  border-bottom: 4px solid #e63946; /* Accent red color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for navbar */
+  position: relative; /* Allow the navbar to scroll away */
+  z-index: 10; /* Ensures navbar stays on top while scrolling */
+}
+
+#main-navbar .navbar-brand {
+  color: #f1faee;
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase; /* Bold, strong look */
+  letter-spacing: 1px;
+}
+
+#main-navbar .navbar-nav .nav-link {
+  color: #f1faee;
+  font-weight: 500;
+  padding: 10px 15px;
+  text-transform: capitalize;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+#main-navbar .navbar-nav .nav-link:hover {
+  color: #e63946;
+  background-color: #457b9d; /* Subtle background color on hover */
+}
+
+#main-navbar .navbar-toggler {
+  border: none;
+}
+
+#main-navbar .navbar-toggler-icon {
+  background-color: #f1faee;
+}
+
+/* Page Heading */
+h1 {
+  color: #1d3557;
+  font-size: 3rem;
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Fun text-shadow for style */
+  letter-spacing: 2px;
+}
+
+.lead {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-style: italic; /* Adds a fun, personal touch */
+}
+
+/* Menu Section */
+.menu-section {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  background-color: #e9ecef;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.menu-item {
+  margin-bottom: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-item:hover {
+  transform: scale(1.05); /* Zoom-in effect */
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px);
+}
+
+.card-img-top {
+  border-radius: 12px 12px 0 0;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1d3557;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+  margin-top: 10px;
+  font-family: 'Courier New', monospace;
+}
+
+/* Button Styles */
+.navbar-toggler {
+  border: none;
+  background: transparent;
+}
+
+.navbar-toggler-icon {
+  width: 30px;
+  height: 3px;
+  background-color: #f1faee;
+  border-radius: 3px;
+}
+
+.navbar-toggler-icon:before,
+.navbar-toggler-icon:after {
+  content: '';
+  width: 30px;
+  height: 3px;
+  background-color: #f1faee;
+  border-radius: 3px;
+}
+
+/* Media Queries for Mobile & Tablet */
+@media (max-width: 991px) {
+  .menu-item {
+    margin-bottom: 20px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global Links */
+a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #e63946;
+}
+
+/* Accessibility Enhancements */
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid #e63946;
+  outline-offset: 4px;
+}

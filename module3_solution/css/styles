@@ -1,0 +1,11 @@
+/* Tall content section with distinguishable background */
+.content-section {
+  height: 1000px;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+/* Ensure mobile dropdown menu takes full width */
+.navbar-collapse {
+  background-color: #ddd; /* distinguishable background */
+}
